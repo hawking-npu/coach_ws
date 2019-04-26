@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jensen/coach_ws/src/nubot/world_model/include/nubot/rtdb/rtdb_defs.h
+string
+-
+
+/home/jensen/coach_ws/src/nubot/world_model/include/nubot/rtdb/rtdb_user.h
+
+/home/jensen/coach_ws/src/nubot/world_model/rtdb/rtdb_api.cpp
+stdio.h
+-
+unistd.h
+-
+stdlib.h
+-
+string.h
+-
+sys/time.h
+-
+sys/types.h
+-
+sys/ipc.h
+-
+sys/shm.h
+-
+time.h
+-
+errno.h
+-
+nubot/rtdb/rtdb_defs.h
+/home/jensen/coach_ws/src/nubot/world_model/rtdb/nubot/rtdb/rtdb_defs.h
+nubot/rtdb/rtdb_user.h
+/home/jensen/coach_ws/src/nubot/world_model/rtdb/nubot/rtdb/rtdb_user.h
+sstream
+-
+

@@ -1,0 +1,17 @@
+-I/home/jensen/coach_ws/build/nubot/nubot_coach
+-I/home/jensen/coach_ws/devel/include
+-I/home/jensen/coach_ws/src/nubot/nubot_common/core/include
+-I/home/jensen/coach_ws/src/nubot/world_model/include
+-I/opt/ros/kinetic/include
+-I/opt/ros/kinetic/include/opencv-3.3.1-dev
+-I/opt/ros/kinetic/include/opencv-3.3.1-dev/opencv
+-I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp
+-I/usr/include
+-I/usr/include
+-I/home/jensen/coach_ws/src/nubot/nubot_coach/include/nubot_coach
+-DROS_BUILD_SHARED_LIBS=1
+-DROS_PACKAGE_NAME="nubot_coach"
+-DROSCONSOLE_BACKEND_LOG4CXX
+-o
+/home/jensen/coach_ws/build/nubot/nubot_coach/include/nubot_coach/moc_coach_dialog.cpp
+/home/jensen/coach_ws/src/nubot/nubot_coach/include/nubot_coach/coach_dialog.h
