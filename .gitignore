@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+# devel and build
+build
+devel
+coach_ws.workspace.user

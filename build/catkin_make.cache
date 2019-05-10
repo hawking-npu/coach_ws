@@ -1,2 +1,0 @@
-nubot/nubot:nubot/nubot_coach:nubot/nubot_common:nubot/world_model
--DCATKIN_DEVEL_PREFIX=/home/jensen/coach_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jensen/coach_ws/install -G Unix Makefiles

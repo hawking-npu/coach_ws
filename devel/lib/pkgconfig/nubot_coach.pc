@@ -1,8 +1,0 @@
-prefix=/home/jensen/coach_ws/devel
-
-Name: nubot_coach
-Description: Description of nubot_coach
-Version: 0.0.0
-Cflags: -I/home/jensen/coach_ws/src/nubot/nubot_coach/include
-Libs: -L/home/jensen/coach_ws/devel/lib 
-Requires: message_generation dynamic_reconfigure roscpp rospy std_msgs std_srvs
