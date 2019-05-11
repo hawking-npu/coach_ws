@@ -1,5 +1,5 @@
 
 <launch>
-	<env name="AGENT" value="0" />
+  <env name="AGENT" value="0" />
   <node name="nubot_coach_cyan" pkg="nubot_coach" type="cyan_coach.sh"/>
 </launch>

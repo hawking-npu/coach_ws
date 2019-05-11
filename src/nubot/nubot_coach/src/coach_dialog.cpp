@@ -75,7 +75,13 @@ Dialog::Dialog(nubot::Robot2coach_info & robot2coach, nubot::MessageFromCoach & 
 
     timer->start(30);                                                            //定时函数，每30ms
 
-    this->setFixedSize(1110,700);                                                //固定窗口大小
+    this->setFixedSize(1608,1005);                                                //固定窗口大小
+
+    QPropertyAnimation *animation = new QPropertyAnimation(this, "windowOpacity");
+    animation->setDuration(250);
+    animation->setStartValue(0);
+    animation->setEndValue(1);
+    animation->start();
 
     field_img_init_.load("../../../src/nubot/nubot_coach/source/field.png");     //载入场地图像
     field_img_home_.load("../../../src/nubot/nubot_coach/source/field_home.png");
@@ -218,6 +224,11 @@ void Dialog::closeEvent(QCloseEvent *event)                //结束时关闭Ros�
 {
     //system("rosnode kill /world_model_node");
     //system("rosnode kill /rosout");
+    QPropertyAnimation *animation = new QPropertyAnimation(this, "windowOpacity");
+    animation->setDuration(100);
+    animation->setStartValue(1);
+    animation->setEndValue(0);
+    animation->start();
     ros::shutdown();
 }
 

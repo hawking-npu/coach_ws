@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(nubot_coach)
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++0x")
 set(CMAKE_BUILD_TYPE "Debug")
-set(CMAKE_PREFIX_PATH  ${CMAKE_PREFIX_PATH} "/opt/Qt5.3.2/5.3/gcc_64/lib/cmake/Qt5Widgets/")
+#set(CMAKE_PREFIX_PATH  ${CMAKE_PREFIX_PATH} "/opt/qt59/lib/cmake/Qt5Widgets/")
 #set(EXECUTABLE_OUTPUT_PATH  "${PROJECT_SOURCE_DIR}/bin")
 #set(CMAKE_AUTOMOC ON)
 #set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -23,7 +23,7 @@ find_package(catkin REQUIRED COMPONENTS
   cmake_modules
 )
  
-find_package(Qt5Widgets)  
+find_package(Qt5Widgets)
 find_package(Qt5Network)
 find_package(Qt5Xml)
 find_package(OpenCV REQUIRED)

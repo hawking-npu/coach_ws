@@ -19,7 +19,8 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 
-add_message_files(DIRECTORY msgs FILES Angle.msg
+add_message_files(DIRECTORY msgs FILES
+Angle.msg
 Point2d.msg
 PPoint.msg
 Point3d.msg
@@ -40,7 +41,9 @@ FrontBallInfo.msg
 simulation_strategy.msg
 )
 
-add_service_files(DIRECTORY srv FILES BallHandle.srv Shoot.srv)
+add_service_files(DIRECTORY srv FILES
+BallHandle.srv
+Shoot.srv)
 
 generate_messages(DEPENDENCIES std_msgs)
 
