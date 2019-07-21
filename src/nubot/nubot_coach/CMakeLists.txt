@@ -52,9 +52,11 @@ include_directories(${nubot_coach_includes})
 FILE(GLOB_RECURSE CPP_SRC_LIST "src/*.cpp")
 
 Qt5_WRAP_CPP(coach_MOCS include/nubot_coach/coach_dialog.h
-                        include/nubot_coach/mainwindow.h)
+                        include/nubot_coach/mainwindow.h
+                        include/nubot_coach/debug_dialog.h)
 Qt5_WRAP_UI(coach_UIS src/coach_dialog.ui
-                      src/mainwindow.ui)
+                      src/mainwindow.ui
+                      src/debug_dialog.ui)
 add_executable(nubot_coach_node
      ${CPP_SRC_LIST}
      ${coach_UIS}

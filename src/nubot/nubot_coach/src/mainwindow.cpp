@@ -33,3 +33,10 @@ void MainWindow::on_soccer_clicked()
     w->show();
     robot2coach->start();
 }
+
+void MainWindow::on_debug_clicked()
+{
+    ROS_INFO("start debugging");
+    d=new debug_Dialog(robot2coach->robot2coach_info,robot2coach->coach2robot_info);
+    d->show();
+}

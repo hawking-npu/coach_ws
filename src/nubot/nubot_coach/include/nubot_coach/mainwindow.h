@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "coach_dialog.h"
+#include "debug_dialog.h"
 #include <robot2coach.h>
 #include "ui_mainwindow.h"
 
@@ -22,10 +23,13 @@ public:
 
 private slots:
     void on_soccer_clicked();
+    void on_debug_clicked();
 
 private:
     Ui::MainWindow *ui;
     Dialog *w;
+    debug_Dialog *d;
+    
     nubot::Robot2coach *robot2coach;
 //    void on_action_connect_triggered()
 //    {
